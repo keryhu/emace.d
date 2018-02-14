@@ -1,0 +1,6 @@
+* 安装过程
+** brew cask install emacs
+2 brew install rtags (装的过程，会去装他的依赖，包含了 llvm)
+3 根据 https://github.com/Andersbakken/rtags 和 brew info rtags 的信息，更新 rdm 自动启动的 代码
+4 irony 安装 server 
+5 使用 Emacs Client 启动emacs 的server 和 client 

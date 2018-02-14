@@ -1,0 +1,11 @@
+;;; package --- Summary
+;;; description: $1
+;;; Commentary:
+;;; Code:
+
+$2
+
+(provide '`(substring (buffer-name) 0 -3)`)
+
+;;; `(buffer-name)`  ends here
+

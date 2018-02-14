@@ -1,0 +1,1 @@
+("~/Desktop/local-config-app/home-backup/" "~/")
