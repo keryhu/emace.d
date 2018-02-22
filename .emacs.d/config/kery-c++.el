@@ -2,6 +2,8 @@
 ;;; description: for all c++ config
 ;;; Commentary:
 ;;; Code:
+;; change all header files to c++ mode(for header completion)
+(add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))
 (use-package rtags
   :ensure t
   :config
@@ -13,15 +15,6 @@
   (add-hook 'objc-mode-hook 'rtags-start-process-unless-running)
   )
 
-(global-set-key (kbd "<f5>") (lambda ()
-			       (interactive)
-			       (defvar path (concat (projectile-project-root) "/run.sh"))
-			       (shell-command path)))
-
-(use-package projectile
-  :config
-  (projectile-mode))
-
 ;; (use-package cmake-ide
 ;;   :ensure t
 ;;   :config
@@ -30,6 +23,10 @@
 ;;   (setq cmake-ide-flags-c++ t)
 ;;   (setq cmake-ide-flags-c t)
 ;;   )
+
+;; (global-set-key (kbd "<f5>") (lambda ()
+;; 			       (interactive)
+;; 			       (shell-command (concat (projectile-project-root) "run.sh"))))
 
 (use-package cmake-mode
   :ensure t
@@ -40,11 +37,8 @@
   :config
   (add-hook 'c-mode-common-hook 'google-set-c-style)
   (add-hook 'c-mode-common-hook 'google-make-newline-indent))
-;; gdb debug config
-;; use gdb-many-windows by default
-(defvar gdb-many-windows t )
-;; Non-nil means display source file containing the main routine at startup
-(defvar gdb-show-main t)
+;; Disable company in gdb mode
+(setq company-global-modes '(not gud-mode))
 
 (provide 'kery-c++)
 

@@ -36,7 +36,6 @@
   :after (irony)
   :config (add-to-list 'company-backends ' company-irony-c-headers))
 
-
 (provide 'kery-c-completion)
 
 ;;; kery-c-completion.el  ends here

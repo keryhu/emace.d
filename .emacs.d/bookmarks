@@ -2,4 +2,9 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-()
+(("RTags_0"
+ (filename . "~/code/c++/learn-cmake/calculator-2/src/token_stream.cc")
+ (front-context-string . "kDeclKey) return")
+ (rear-context-string . "       if (s == ")
+ (position . 1184))
+)

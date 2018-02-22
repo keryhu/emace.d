@@ -30,6 +30,9 @@
   (defvar company-transformers '(company-sort-by-occurrence))
   )
 
+(use-package company-flx :ensure t
+  :config (company-flx-mode +1))
+
 ;; Add yasnippet support for all company backends
 ;; https://github.com/syl20bnr/spacemacs/pull/179
 (defvar company-mode/enable-yas t

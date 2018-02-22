@@ -24,7 +24,7 @@
  'helm 'flycheck 'use-package 'dracula-theme 'company 'yasnippet 'autoinsert
  'magit 'delight 'cyphejor 'irony 'company-irony 'company-irony-c-headers
  'rtags 'flycheck-irony 'cmake-ide 'helm-rtags 'exec-path-from-shell
- 'cmake-mode 'google-c-style 'projectile
+ 'cmake-mode 'google-c-style 'projectile 'helm-projectile 'window-numbering 'company-flx
  )
 ;; 将自定义的配置文件放在 settings 目录下。
 (add-to-list 'load-path	     "~/.emacs.d/config/")
@@ -40,6 +40,9 @@
 (require  'kery-cyphejor)
 (require  'kery-c++)
 (require  'kery-c-completion)
+(require  'kery-projectile)
+(require  'kery-gdb)
+;;(require  'kery-smartparent)
 ;;(require  'kery-latex)
 
 (provide 'init)
@@ -52,7 +55,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (google-c-style cmake-mode exec-path-from-shell helm-rtags cmake-ide company-irony-c-headers company-irony irony cyphejor magit yasnippet company use-package flycheck dracula-theme))))
+    (company-c-headers google-c-style cmake-mode exec-path-from-shell helm-rtags cmake-ide company-irony-c-headers company-irony irony cyphejor magit yasnippet company use-package flycheck dracula-theme))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
