@@ -2,6 +2,7 @@
 .emacs.d/.DS_Store
 .emacs.d/auto-save-list/
 .emacs.d/backup/
-.emacs.d/elpa/
+.emacs.d/elpa/*
 .emacs.d/eshell/
 .emacs.d/irony/
+!.emacs.d/elpa/use-packag*/*
