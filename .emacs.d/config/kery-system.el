@@ -8,6 +8,7 @@
 ;; move to trash
 (setq delete-by-moving-to-trash t)
 (setq trash-directory "~/.Trash/")
+(global-set-key "\C-cd" 'kill-whole-line)
 ;; 当文件或非文件磁盘更新的时候，自动更新buffer
 (global-auto-revert-mode t)
 ;;  可以使得narrow 自动开启。

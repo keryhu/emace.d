@@ -11,15 +11,10 @@
          ("C-c f" . helm-find)
          ("C-x b" . helm-mini)
          ("C-x C-f" . helm-find-files)
-	 ("C-x r b" . helm-filtered-bookmarks) 
          ("M-x" . helm-M-x)
          ("M-y" . helm-show-kill-ring)
          ("M-s o" . helm-occur))
   :config (helm-mode))
-
-
-
-
 
 (provide 'kery-helm)
 

@@ -68,8 +68,7 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-
-# export MANPATH="/usr/local/man:$MANPATH"
+ export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -97,7 +96,5 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 # export brew llvm  brew install llvm --with-libcxx --with-clang --without-assertions --with-rtti
 export PATH="/usr/local/opt/llvm/bin:$PATH"
-alias ed='/usr/local/bin/emacs --daemon'
-alias ec='/usr/local/bin/emacsclient -c -n'
 
 DEFAULT_USER=`whoami`
