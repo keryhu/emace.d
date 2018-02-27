@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: shipoint.net c++ header comment
+# key: spch
+# --
+//由 keryhu [keryhu@hotmail.com] 在 `(format-time-string "%Y-%m-%d %l:%M:%S")` 创建
+//copyright (c) 所有权归上海石指网络科技有限公司，任何人不得拷贝，复制。
+//last updated by : keryhu@hotmail.com
+//--------------------------------------------------------------------
+//此文件功能简介：

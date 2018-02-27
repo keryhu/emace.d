@@ -12,6 +12,7 @@
   (setq yas-snippet-dirs
 	'("~/.emacs.d/snippets"  ;; personal snippets
 	  ))
+(setq yas-triggers-in-field t)
   )
 ;; company
 (use-package company
