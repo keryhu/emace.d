@@ -11,6 +11,9 @@
         ns-alternate-modifier 'meta ; left alt key = meta
         ns-right-alternate-modifier 'alt)); 右边的 alt key =alt
 
+;; 如果冲突，就改为 "C-z C-q"
+(global-set-key (kbd "M-q") 'save-buffers-kill-emacs)
+(global-set-key "\C-cd" 'kill-whole-line)
 
 ;; (when (eq system-type 'darwin)  ; mac specific bindings
 ;;   (setq mac-right-command-modifier 'meta ; right cmd = meta

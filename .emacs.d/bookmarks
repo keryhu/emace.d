@@ -2,7 +2,12 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("c++-code-root"
+(("c++-principl-code"
+ (filename . "~/Desktop/document/cs-and-math-document/computer/c++/programing principl c++/Programming-code/")
+ (front-context-string . ".DS_Store\n  drwx")
+ (rear-context-string . "244  2 27 19:44 ")
+ (position . 308))
+("c++-code-root"
  (filename . "~/code/c++/learn-cmake/")
  (front-context-string . ".DS_Store\n  drwx")
  (rear-context-string . "244  2 27 20:31 ")

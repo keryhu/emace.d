@@ -8,7 +8,7 @@
 ;; move to trash
 (setq delete-by-moving-to-trash t)
 (setq trash-directory "~/.Trash/")
-(global-set-key "\C-cd" 'kill-whole-line)
+
 ;; 当文件或非文件磁盘更新的时候，自动更新buffer
 (global-auto-revert-mode t)
 ;;  可以使得narrow 自动开启。
@@ -31,11 +31,6 @@
 (setq kill-buffer-query-functions
   (remq 'process-kill-buffer-query-function
 	kill-buffer-query-functions))
-;;For our comments (only comments, not code) to be automatically filled in programming modes
-(defun comment-auto-fill ()
-      (setq-local comment-auto-fill-only-comments t)
-      (auto-fill-mode 1))
-(add-hook 'prog-mode-hook 'comment-auto-fill)
 
 ;; delight config
 (delight '((abbrev-mode  nil  abbrev)
