@@ -24,21 +24,40 @@
 ;;   (setq cmake-ide-flags-c t)
 ;;   )
 
-;; (global-set-key (kbd "<f5>") (lambda ()
-;; 			       (interactive)
-;; 			       (shell-command (concat (projectile-project-root) "run.sh"))))
 
 (use-package cmake-mode
   :ensure t
   :mode (("\\.cmake\\'" . cmake-mode)
          ("CMakeLists.txt" . cmake-mode)))
+
+
 (use-package google-c-style
   :ensure t
-  :config
+  :init
   (add-hook 'c-mode-common-hook 'google-set-c-style)
-  (add-hook 'c-mode-common-hook 'google-make-newline-indent))
+  (add-hook 'c-mode-common-hook 'google-make-newline-indent)
+  :config
+  (setq c-hungry-delete-key t)
+  )
+
+(use-package modern-cpp-font-lock
+  :ensure t
+  :config
+  (modern-c++-font-lock-global-mode t))
+
+(use-package clang-format
+  :ensure t
+  :config
+  (add-hook 'c-mode-common-hook
+            '(lambda ()
+               (local-set-key (kbd "C-c i b") 'clang-format-buffer)
+               (local-set-key (kbd "C-c i r") 'clang-format-region)))
+  (defvar clang-format-style-option "google"))
+
+
+
 ;; Disable company in gdb mode
-(setq company-global-modes '(not gud-mode))
+(defvar company-global-modes '(not gud-mode))
 
 (provide 'kery-c++)
 

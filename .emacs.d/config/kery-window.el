@@ -4,7 +4,7 @@
 ;;; Code:
 
 ;; 设置初始化的frame 的宽，距离左边的像素，高，已经字体大小
-(add-to-list 'default-frame-alist '(width  . 150))
+(add-to-list 'default-frame-alist '(width  . 155))
 (add-to-list 'default-frame-alist '(left  . 5))
 (add-to-list 'default-frame-alist '(height . 80))
 

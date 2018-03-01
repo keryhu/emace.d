@@ -34,8 +34,9 @@
 
 ;; delight config
 (delight '((abbrev-mode  nil  abbrev)
-	    (irony-mode nil  irony)))
-
+	   (irony-mode nil  irony)))
+;; 单词不拆分
+(setq-default word-wrap t)
 ;; mac shell path export
 (use-package exec-path-from-shell
 :config

@@ -24,7 +24,8 @@
  'helm 'flycheck 'use-package 'dracula-theme 'company 'yasnippet 'autoinsert
  'magit 'delight 'cyphejor 'irony 'company-irony 'company-irony-c-headers
  'rtags 'flycheck-irony 'cmake-ide 'helm-rtags 'exec-path-from-shell
- 'cmake-mode 'google-c-style 'projectile 'helm-projectile 'window-numbering 'company-flx 'web-mode
+ 'cmake-mode 'google-c-style 'projectile 'helm-projectile 'window-numbering
+ 'company-flx  'web-mode 'modern-cpp-font-lock 'clang-format
  )
 ;; 将自定义的配置文件放在 settings 目录下。
 (add-to-list 'load-path	     "~/.emacs.d/config/")
@@ -43,9 +44,10 @@
 (require  'kery-projectile)
 (require  'kery-gdb)
 (require  'kery-web)
-(require  'kery-program)
 (require  'kery-window)
 (require  'kery-org)
+(require  'kery-program)
+(require  'kery-org-font)
 ;;(require  'kery-smartparent)
 ;;(require  'kery-latex)
 
