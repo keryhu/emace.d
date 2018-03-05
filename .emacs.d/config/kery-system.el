@@ -40,7 +40,9 @@
 ;; mac shell path export
 (use-package exec-path-from-shell
 :config
-(exec-path-from-shell-initialize))
+(exec-path-from-shell-initialize)
+(setq exec-path-from-shell-check-startup-files nil))
+
 
 (provide 'kery-system)
 

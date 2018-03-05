@@ -50,8 +50,9 @@
   :config
   (add-hook 'c-mode-common-hook
             '(lambda ()
-               (local-set-key (kbd "C-c i b") 'clang-format-buffer)
-               (local-set-key (kbd "C-c i r") 'clang-format-region)))
+               (local-set-key (kbd "C-c b") 'clang-format-buffer)
+               ;;(local-set-key (kbd "C-c i r") 'clang-format-region)
+	       ))
   (defvar clang-format-style-option "google"))
 
 

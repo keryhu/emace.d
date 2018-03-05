@@ -3,22 +3,13 @@
 ;;; Commentary:
 ;;; Code:
 
-;;For our comments (only comments, not code) to be automatically filled in programming modes
-(defun comment-auto-fill ()
-  "Comment fill ."
-  (setq-local comment-auto-fill-only-comments t)
-  (auto-fill-mode 1))
+;;For our comments (only comments, not code) to be automatically filled in programming modesy
 
 (add-hook 'prog-mode-hook '(lambda ()
-			     (comment-auto-fill)
-			     (setq fill-column 80)
+			     (setq comment-auto-fill-only-comments t)
 			     (linum-mode 1)
 			     (auto-fill-mode 1)
-			     (column-number-mode 1)
 			     ))
-
-
-
 
 
 

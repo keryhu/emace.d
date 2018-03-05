@@ -96,5 +96,5 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 # export brew llvm  brew install llvm --with-libcxx --with-clang --without-assertions --with-rtti
 export PATH="/usr/local/opt/llvm/bin:$PATH"
-
+export PATH="/Library/TeX/texbin:$PATH"
 DEFAULT_USER=`whoami`

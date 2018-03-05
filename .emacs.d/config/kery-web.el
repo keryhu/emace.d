@@ -10,8 +10,13 @@
   ("\\.html$" . web-mode)
   ("\\.scss$" . web-mode)
   :config
-  (defvar web-mode-markup-indent-offset 2)
-  (defvar web-mode-css-indent-offset 2)
+(setq web-mode-enable-css-colorization t)
+ (setq-default css-indent-offset 2
+                web-mode-markup-indent-offset 2
+                web-mode-css-indent-offset 2
+                web-mode-code-indent-offset 2
+                web-mode-attr-indent-offset 2)
+
   )
 
 

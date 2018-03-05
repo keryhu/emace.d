@@ -15,6 +15,13 @@
 (global-set-key (kbd "M-q") 'save-buffers-kill-emacs)
 (global-set-key "\C-cd" 'kill-whole-line)
 
+;; org keys
+(global-set-key "\C-cl" 'org-store-link)
+(global-set-key "\C-cc" 'org-capture)
+(global-set-key "\C-ca" 'org-agenda)
+(global-set-key "\C-cb" 'org-iswitchb)
+
+
 ;; (when (eq system-type 'darwin)  ; mac specific bindings
 ;;   (setq mac-right-command-modifier 'meta ; right cmd = meta
 ;;         mac-command-modifier 'control ; left cmd = control
