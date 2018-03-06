@@ -3,7 +3,15 @@
 ;;; Commentary:
 ;;; Code:
 
-
+(defvar TeX-save-query nil) ;; autosave before compiling
+(defvar TeX-PDF-mode t) ;; compile to pdf
+(defvar TeX-parse-self t)
+(setq-default TeX-master nil)
+(add-hook 'LaTeX-mode-hook (lambda()
+                             (defvar TeX-command-default "XeLaTeX")
+                             (setq TeX-save-query nil)
+                             (defvar TeX-show-compilation nil)
+                             ))
 (use-package ox-latex
   :ensure nil
   :config

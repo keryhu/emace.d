@@ -5,6 +5,8 @@
 (require 'package)
 (add-to-list 'package-archives
 	     '("melpa" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/"))
+(add-to-list 'package-archives
+             '("org" . "http://orgmode.org/elpa/") t)
 (package-initialize)
 ;; === CUSTOM CHECK FUNCTION ===
 (defun ensure-package-installed (&rest packages)
@@ -51,6 +53,7 @@
 (require  'kery-org-font)
 (require  'kery-uml)
 (require  'kery-latex)
+(require  'kery-customs)
 ;;(require  'kery-smartparent)
 
 
